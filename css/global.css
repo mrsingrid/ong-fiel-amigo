@@ -1,0 +1,136 @@
+:root {
+  --primary-color: #232F61; 
+  --secondary-color: #2ecc71; 
+  --white: #fff;
+  --text-color: #343434;
+}
+
+html {
+  font-size: 16px; /* Tamanho base */
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  color: var(--text-color);
+  font-size: 1rem; /* 16px */
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5rem;
+
+  @media screen and (max-width: 801px) {
+    padding: 0 2rem;
+  }
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  padding: 2rem 0;
+
+  @media screen and (max-width: 801px) {
+    justify-content: space-between;
+    gap: 0;
+  }
+}
+
+.desktop__nav {
+  display: flex;
+
+  ul{
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1rem;
+
+    li {
+      min-width: 5rem;
+
+      &:hover {
+        font-weight: 600;
+      }
+    }
+  }
+
+  @media screen and (max-width: 801px) {
+    display: none;
+  }
+} 
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  width: fit-content;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 1rem;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.dropdown {
+  display: none;
+  position: relative;
+
+  @media screen and (max-width: 801px) {
+    display: block;
+  }
+}
+
+.dropdown__button {
+  background: none;
+  opacity: 1;
+  padding: 0;
+  color: var(--primary-color);
+  width: auto;
+  border-radius: 0;
+}
+
+.mobile__nav {
+  display: none;
+  width: 100%;
+  width: 15rem;
+  position: absolute;
+  right: 0;
+  background: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+  ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1rem;
+
+    li {
+      padding: 1rem;
+      cursor: pointer;
+
+      &:hover {
+        background: var(--primary-color);
+        color: var(--white);
+      }
+    }
+  }
+} 
+
