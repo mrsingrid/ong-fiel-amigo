@@ -34,3 +34,11 @@ imgPet.src = pet.img;
 
 document.getElementById('pet-name').innerText = pet.name;
 
+const phoneNumber = '5585989194818'; 
+const message = `Olá, estou interessado na adoção do pet ${pet.name}!`;
+document.getElementById('whatsapp-button').onclick = function() {
+    const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+};
+
+
