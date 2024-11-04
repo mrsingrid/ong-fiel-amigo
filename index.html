@@ -7,58 +7,269 @@
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="css/index.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
-    integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMV4p4D4aDiS4Fkx6Q7z5v4e9w0Hn5jA2Q1Hj" 
-    crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/1ec5320bec.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="./assets/fav.ico">
+
 </head>
 <body>
   <div class="container">
-    <header class="header">
-      <img src="assets/logo.svg" alt="Logotipo uma pata de um animal e nome da ONG Fiel Amigo com link para a página inicial">
   
-      <nav class="desktop__nav">
-        <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Adote</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Adoções</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </nav>
-
-      <div class="dropdown">
-        <button class="dropdown__button" id="dropdown-button">
-          <i class="fa fa-bars"></i>
-        </button>
-
-        <nav class="mobile__nav" id="mobile-nav">
+    <div class="main-informations__container section--padding">
+      <header class="header">
+        <a href="#">
+          <img src="assets/logo.svg" alt="Logotipo uma pata de um animal e nome da ONG Fiel Amigo com link para a página inicial">
+        </a>
+    
+        <nav class="desktop__nav">
           <ul>
             <li><a href="#">Início</a></li>
-            <li><a href="#">Adote</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Adoções</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="pages/adopt.html">Adote</a></li>
+            <li><a href="pages/about.html">Sobre</a></li>
+            <li><a href="pages/donations.html">Doações</a></li>
+            <li><a href="pages/contact.html">Contato</a></li>
           </ul>
         </nav>
+  
+        <div class="dropdown">
+          <button class="dropdown__button" id="dropdown-button">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+  
+          <nav class="mobile__nav" id="mobile-nav">
+            <ul>
+              <li><a href="#">Início</a></li>
+              <li><a href="pages/adopt.html">Adote</a></li>
+              <li><a href="pages/about.html">Sobre</a></li>
+              <li><a href="pages/donations.html">Doações</a></li>
+              <li><a href="pages/contact.html">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header> 
+  
+      <main class="main__container">
+        <div class="text__container">
+          <h1 class="main__title">Não compre, adote</h1>
+  
+          <p class="main__description">
+            Adotar animais é um ato de amor e responsabilidade. Cada adoção transforma vidas e ajuda a combater o abandono.
+          </p>
+  
+          <button onclick="window.location.href='pages/adopt.html'">Quero adotar</button>
+        </div>
+      </main>
+    </div>
+  
+    <section class="steps-to-adoption__container section--padding">
+      <div class="step-to-adoption__container">
+        <i class="fa-solid fa-magnifying-glass step__icon"></i>
+  
+        <span class="step__title">
+          Encontre um amigo
+        </span>
+        
+        <p class="step__description">
+          Pesquise os animais disponíveis em nossa lista de adoção
+        </p>
+      </div>
+      
+      <div class="step-to-adoption__container">
+        <i class="fa-regular fa-message step__icon"></i>
+  
+        <span class="step__title">
+          Comunicação
+        </span>
+        
+        <p class="step__description">
+          Entre em contato conosco e participe da entrevista de adoção
+        </p>
+      </div>
+  
+      <div class="step-to-adoption__container">
+        <i class="fa-regular fa-heart step__icon"></i>
+  
+        <span class="step__title">
+          Adoção
+        </span>
+        
+        <p class="step__description">
+          Entraremos em contato no caso de aprovação do pedido de adoção
+        </p>
+      </div>
+    </section>
+
+    <section class="
+      secundary--background--image
+      section__container 
+      section--padding
+      ">
+      <h2 class="section__title">Pets recém chegados</h2>
+
+      <div class="section__content">
+        <div class="new-pet__card" onclick="window.location.href='pages/detail-pet.html?id=1'">
+          <img 
+            src="./assets/nina.png" 
+            alt="Imagem da gata Nina de pelos pretos, olhos amarelos e pelos brancos no fucinho" 
+            class="new-pet__card-image">
+            <span class="new-pet__card-pet-name">Nina</span>
+            <div class="new-pet__card-pet-info">
+            <span>Fêmea</span>
+            <span>Adulta</span>
+            <span>Médio Porte</span>
+          </div>
+        </div>
+
+        <div class="new-pet__card" onclick="window.location.href='pages/detail-pet.html?id=2'">
+          <img 
+            src="./assets/felix.png" 
+            alt="Imagem da gato filhote Félix de pelagem rajada, dormindo" 
+              class="new-pet__card-image">
+            <span class="new-pet__card-pet-name">Félix</span>
+            <div class="new-pet__card-pet-info">
+            <span>Macho</span>
+            <span>Filhote</span>
+            <span>Pequeno Porte</span>
+          </div>
+        </div>
+
+        <div class="new-pet__card" onclick="window.location.href='pages/detail-pet.html?id=3'">
+          <img 
+            src="./assets/mingau.png" 
+            alt="Imagem do gato filhote Mingau de pelagem branca, dormindo" 
+            class="new-pet__card-image">
+            <span class="new-pet__card-pet-name">Mingau</span>
+            <div class="new-pet__card-pet-info">
+            <span>Macho</span>
+            <span>Filhote</span>
+            <span>Médio Porte</span>
+          </div>
+        </div>
+
+        <div class="new-pet__card" onclick="window.location.href='pages/detail-pet.html?id=4'">
+          <img 
+            src="./assets/bolt.png" 
+            alt="Imagem do cachorro filhote Bolt de pelagem preta" 
+            class="new-pet__card-image">
+          <span class="new-pet__card-pet-name">Bolt</span>
+          <div class="new-pet__card-pet-info">
+            <span>Macho</span>
+            <span>Filhote</span>
+            <span>Grande Porte</span>
+          </div>
+        </div>
       </div>
     
-    </header> 
+      <button onclick="window.location.href='pages/adopt.html'">Ver mais</button>
+    </section>
 
-    <main class="main__container">
+    <section class="
+      primary--background--image
+      section__container 
+      section--padding
+      ">
+      <h2 class="section__title">Toda ajuda conta e faz muita diferença</h2>
 
-      <div class="text__container">
-        <h1 class="main__title">Não compre, adote</h1>
+      <div class="section__content">
+        <div class="number__container">
+          <span class="number__title">
+            + 2
+          </span>
 
-        <p class="main__description">
-          Adotar animais é um ato de amor e responsabilidade. Cada adoção transforma vidas e ajuda a combater o abandono.
-        </p>
+          <p class="number__description">
+            toneladas de ração arrecadadas desde 2019
+          </p>
+        </div>
 
-        <button>Quero adotar</button>
+        <div class="number__container">
+          <span class="number__title">
+            + 50
+          </span>
+
+          <p class="number__description">
+            ações realizadas na comunidade
+          </p>
+        </div>
+
+        <div class="number__container">
+          <span class="number__title">
+            +150
+          </span>
+
+          <p class="number__description">
+            adoções realizadas em 2024
+          </p>
+        </div>
       </div>
-    </main>
+      
+
+      <button  onclick="window.location.href='pages/donations.html'">Fazer uma doação</button>
+    </section>
+
+    <section class="
+      secondary--background--image
+      section__container 
+      section--padding
+      ">
+      <h2 class="section__title">Adoções realizadas</h2>
+
+      <div class="section__content">
+        <div class="testimony__card">
+          <img 
+            src="./assets/testimony-1.png" 
+            alt="Imagem da tutora Luana beijando sua cadelinha Mel" 
+            class="testimony__card-image">
+          <div class="testimony__card-content">
+            <span class="testimony__card-tutor-name">Luana Cristina</span>
+            <span class="testimony__card-pet-name">Tutora da Mel</span>
+            <p class="testimony__card-description">
+              Quando vi a foto dela no site soube que era ela quem eu procurava. A adoção foi fácil, teve toda orientação da ONG FIEL AMIGO.
+            </p>  
+          </div>
+        </div>
+
+        <div class="testimony__card">
+          <img 
+            src="./assets/testimony-2.png" 
+            alt="Imagem da tutora Márcia abraçando seu cachorro Téo" 
+            class="testimony__card-image">
+          <div class="testimony__card-content">
+            <span class="testimony__card-tutor-name">Márcia Araújo</span>
+            <span class="testimony__card-pet-name">Tutora do Téo</span>
+            <p class="testimony__card-description">
+              Fiquei comovida com a história do Téo, queria poder dar a ele tudo que nunca pode ter, hoje eu acredito que quem mudou minha vida foi ele!
+            </p>  
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <footer class="footer">
+      <img src="assets/logo-white.svg" alt="Logotipo uma pata de um animal e nome da ONG Fiel Amigo com link para a página inicial">
+
+      <div class="social-media-container">
+        <a href="https://www.instagram.com/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://www.facebook.com/" target="_blank">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.x.com/" target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </div>
+
+      <div class="newsletter__container">
+        <span class="newsletter__title">Assine nossa newsletter</span>
+        <input type="text" class="newsletter__input" placeholder="Insira seu e-mail"/>
+        <button class="newsletter__button">Assinar</button>
+      </div>
+      
+    </footer>
   </div>
 </body>
 

@@ -1,0 +1,99 @@
+.pet__container {
+  display: flex;
+  gap: 8rem;
+  justify-content: center;
+
+  @media screen and (max-width: 801px) {
+   flex-direction: column;
+  }
+}
+
+.pet__image-container {
+  width: 20rem;
+  min-width: 20rem;
+  border-radius: 1rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+
+  @media screen and (max-width: 801px) {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+.pet__info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: left;
+}
+
+.pet__name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.pet__status-container {
+  display: flex;
+  gap: 5rem;
+
+  @media screen and (max-width: 801px) {
+    flex-direction: column;
+  }
+}
+
+.pet__status {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.status__name {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.status__icon {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.story__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media screen and (max-width: 801px) {
+    padding: 4rem 0;
+  }
+}
+
+.story__description {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.icon--enabled {
+  color: var(--primary-color);
+}
+
+.icon--disabled {
+  color: var(--gray-color);
+}
+
+button {
+  font-size: 1.1rem;
+
+  @media screen and (max-width: 801px) {
+    font-size: 1rem;
+  }
+}

@@ -6,7 +6,7 @@
   <title>ONG Fiel Amigo</title>
   <link rel="stylesheet" href="../css/reset.css" />
   <link rel="stylesheet" href="../css/global.css" />
-  <link rel="stylesheet" href="../css/adopt.css" />
+  <link rel="stylesheet" href="../css/detail-pet.css" />
   <script src="https://kit.fontawesome.com/1ec5320bec.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,9 +16,7 @@
 <body>
   <div class="container page__container">
     <header class="header page--padding">
-      <a href="../index.html">
-        <img src="../assets/logo.svg" alt="Logotipo uma pata de um animal e nome da ONG Fiel Amigo com link para a página inicial">
-      </a>
+      <img src="../assets/logo.svg" alt="Logotipo uma pata de um animal e nome da ONG Fiel Amigo com link para a página inicial">
   
       <nav class="desktop__nav">
         <ul>
@@ -47,62 +45,57 @@
       </div>
     </header> 
 
-    <main class="page__content page--padding">
-      <h1 class="page__title">Pets disponíveis para adoção</h1>
-    
-      <div class="cards__container" onclick="window.location.href='detail-pet.html?id=1'">
-        <div class="new-pet__card">
-          <img 
-            src="../assets/nina.png" 
-            alt="Imagem da gata Nina de pelos pretos, olhos amarelos e pelos brancos no fucinho" 
-            class="new-pet__card-image">
-          <span class="new-pet__card-pet-name">Nina</span>
-          <div class="new-pet__card-pet-info">
-            <span>Fêmea</span>
-            <span>Adulta</span>
-            <span>Médio Porte</span>
-          </div>
+    <main class="page__content page--padding">      
+      <div class="pet__container">
+        <div class="pet__image-container">
+          <img src="" alt="" id="pet-image">
         </div>
 
-        <div class="new-pet__card" onclick="window.location.href='detail-pet.html?id=2'">
-          <img 
-            src="../assets/felix.png" 
-            alt="Imagem da gato filhote Félix de pelagem rajada, dormindo" 
-            class="new-pet__card-image">
-          <span class="new-pet__card-pet-name">Félix</span>
-          <div class="new-pet__card-pet-info">
-            <span>Macho</span>
-            <span>Filhote</span>
-            <span>Pequeno Porte</span>
-          </div>
-        </div>
+        <div class="pet__info-container">
+          <span class="pet__name" id="pet-name"></span>
 
-        <div class="new-pet__card" onclick="window.location.href='detail-pet.html?id=3'">
-          <img 
-            src="../assets/mingau.png" 
-            alt="Imagem do gato filhote Mingau de pelagem branca, dormindo" 
-            class="new-pet__card-image">
-          <span class="new-pet__card-pet-name">Mingau</span>
-          <div class="new-pet__card-pet-info">
-            <span>Macho</span>
-            <span>Filhote</span>
-            <span>Médio Porte</span>
-          </div>
-        </div>
+          <div class="pet__status-container">
+            <div class="pet__status">
+              <span class="status__name">Carinhoso(a)</span>
+              <div class="status__icon">
+                <i class="fa-solid fa-heart icon--enabled"></i>
+                <i class="fa-solid fa-heart icon--enabled"></i>
+                <i class="fa-solid fa-heart icon--enabled"></i>
+              </div>
+            </div>
 
-        <div class="new-pet__card" onclick="window.location.href='detail-pet.html?id=4'">
-          <img 
-            src="../assets/bolt.png" 
-            alt="Imagem do cachorro filhote Bolt de pelagem preta" 
-            class="new-pet__card-image">
-          <span class="new-pet__card-pet-name">Bolt</span>
-          <div class="new-pet__card-pet-info">
-            <span>Macho</span>
-            <span>Filhote</span>
-            <span>Grande Porte</span>
+            <div class="pet__status">
+              <span class="status__name">Energético(a)</span>
+              <div class="status__icon">
+                <i class="fa-solid fa-bolt icon--enabled"></i>
+                <i class="fa-solid fa-bolt icon--disabled"></i>
+                <i class="fa-solid fa-bolt icon--disabled"></i>
+              </div>
+            </div>
+
+            <div class="pet__status">
+              <span class="status__name">Sociável</span>
+              <div class="status__icon">
+                <i class="fa-solid fa-paw icon--enabled"></i>
+                <i class="fa-solid fa-paw icon--enabled"></i>
+                <i class="fa-solid fa-paw icon--disabled"></i>
+              </div>
+            </div>
           </div>
+
+          <div class="story__container">
+            <h4 class="status__name">História</h4>
+
+            <p class="story__description">
+              Nina é uma encantadora gata de pelos macios e olhos brilhantes, sempre curiosa e pronta para explorar.<br />
+              Resgatada de um abrigo, ela rapidamente conquistou o coração de todos com seu jeito carinhoso e brincalhão. <br />
+              Adora se aninhar em colos quentinhos e brincar com seus brinquedos favoritos. Com muito amor para dar, <br />
+              Nina está em busca de um lar onde possa espalhar alegria e companhia!<br />
+            </p>
+          </div>
+
+          <button>Manifestar interesse de adoção &nbsp; <i class="fa-brands fa-whatsapp"></i></button>
         </div>
-        
       </div>
     </main>
 
@@ -134,4 +127,5 @@
 </body>
 
 <script src="../js/app.js"></script>
+<script src="../js/detail-pet.js"></script>
 </html>

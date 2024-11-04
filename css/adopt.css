@@ -1,0 +1,7 @@
+.cards__container {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
